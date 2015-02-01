@@ -13,7 +13,7 @@ import re
 indexUrl = 'http://5sing.kugou.com/login/'
 
 #http://5sing.kugou.com/my
-loginData = {'RefUrl': 'http://5sing.kugou.com/index.html', 'txtUserName': 'a674810893', 'txtPassword': 'a7921541',
+loginData = {'RefUrl': 'http://5sing.kugou.com/index.html', 'txtUserName': 'ycktest1', 'txtPassword': 'ycktest1',
              'txtCheckCode': '验证码'}
 loginData = urllib.parse.urlencode(loginData).encode('utf-8')
 tempData = {'user': 'admin'}
