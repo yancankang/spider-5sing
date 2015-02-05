@@ -11,7 +11,7 @@ class consumer(threading.Thread):
         globalValues.COUNTER.song_page_count=0
         while True:
             if globalValues.htmlQueue:
-                globalValues.logger.debug(self.name+':htmlQueue剩余：'+str(len(globalValues.htmlQueue)))
+                globalValues.logger.debug(self.name+'------------:htmlQueue剩余：'+str(len(globalValues.htmlQueue))+'访问过得页面:'+str(len(globalValues.visited))+'成功处理的有效页面：'+str(globalValues.COUNTER.song_page_count))
                 self.writeSongMsg(globalValues.htmlQueue.popleft())
 
     def buildSongMsg(self,html):

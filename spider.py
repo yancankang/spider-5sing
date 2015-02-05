@@ -56,7 +56,7 @@ if __name__ == '__main__':
     # 加入主页
     globalValues.urlQueue.append(indexUrl)
     login()
-    for i in range(20):
+    for i in range(6):
         producer('producer'+str(i)).start()
 
     time.sleep(10)
